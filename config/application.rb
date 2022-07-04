@@ -33,5 +33,8 @@ module TodoApiRuby
 
     # Don't generate system test files.
     config.generators.system_tests = nil
+
+    # Custom directories with classes and modules you want to be autoloadable.
+    config.autoload_paths += Dir[Rails.root.join("lib")]
   end
 end
