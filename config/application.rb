@@ -31,10 +31,18 @@ module TodoApiRuby
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
 
+    # Only load smaller set of middleware suitable for API only apps.
+    config.apy_only = true
+
     # Don't generate system test files.
     config.generators.system_tests = nil
 
     # Custom directories with classes and modules you want to be autoloadable.
     config.autoload_paths += Dir[Rails.root.join("lib")]
+
+    # Custom directories with classes and modules you want to be eagerloadable
+    config.eager_load_paths += Dir[Rails.root.join("lib")]
+
+
   end
 end
