@@ -13,7 +13,7 @@ namespace :dev do
     Dir.glob(Rails.root.join("db/seeds/dev/*.rb")).each do | file|
       tik
       require file
-      puts "#{file.delte_prefix('/srv/db/seeds')} (#{tok}s)"
+      puts "#{file.delete_prefix('/srv/db/seeds')} (#{tok}s)"
     end
   end
 

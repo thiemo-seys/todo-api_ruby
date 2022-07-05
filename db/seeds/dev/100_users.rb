@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 USERS = [
-  name: "admin",  email: "admin@google.com",  password: "password", role: "admin"
+  name: "admin",  email: "admin@google.com",
 ]
 
 ActiveRecord::Base.transaction do
@@ -10,6 +10,6 @@ ActiveRecord::Base.transaction do
 
     next unless user.nil?
 
-    user = Users::Users.create!(attrs)
+    user = Users::User.create!(attrs)
   end
 end
