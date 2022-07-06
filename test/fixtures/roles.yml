@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  id: 
+  deleted_at: 2022-07-05 22:39:10
+  name: MyString
+  rights: 1
+
+two:
+  id: 
+  deleted_at: 2022-07-05 22:39:10
+  name: MyString
+  rights: 1
